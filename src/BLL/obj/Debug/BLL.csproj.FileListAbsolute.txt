@@ -1,0 +1,5 @@
+C:\Users\thais\source\repos\Livraria\src\BLL\bin\Debug\BLL.dll
+C:\Users\thais\source\repos\Livraria\src\BLL\bin\Debug\BLL.pdb
+C:\Users\thais\source\repos\Livraria\src\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\thais\source\repos\Livraria\src\BLL\obj\Debug\BLL.dll
+C:\Users\thais\source\repos\Livraria\src\BLL\obj\Debug\BLL.pdb

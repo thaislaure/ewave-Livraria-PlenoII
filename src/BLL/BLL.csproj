@@ -41,13 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bussiness\LivroBLL.cs" />
+    <Compile Include="DTO\AutorDTO.cs" />
+    <Compile Include="DTO\EditoraDTO.cs" />
+    <Compile Include="DTO\LivroDTO.cs" />
+    <Compile Include="DTO\ValidationResultDTO.cs" />
+    <Compile Include="Interfaces\IEditoraRepository.cs" />
+    <Compile Include="Interfaces\IAutorRepository.cs" />
+    <Compile Include="Interfaces\ILivroBLL.cs" />
+    <Compile Include="Interfaces\ILivroRepository.cs" />
+    <Compile Include="Interfaces\IRepositoryBase.cs" />
+    <Compile Include="Models\Livro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{1141f820-40ba-44be-9681-fd40f46e7ca7}</Project>
-      <Name>DAL</Name>
-    </ProjectReference>
+    <Folder Include="Enums\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
