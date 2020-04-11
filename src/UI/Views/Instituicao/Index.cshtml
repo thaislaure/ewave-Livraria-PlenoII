@@ -1,0 +1,41 @@
+﻿@model IEnumerable<BLL.DTO.InstituicaoDTO>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Consulta de Instituição</h1>
+
+<p>
+    <a asp-action="Create">Instituição</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.InstituicaoId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>           
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.InstituicaoId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>                                
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.InstituicaoId">Editar</a> |
+                    <a asp-action="Delete" asp-route-id="@item.InstituicaoId">Deletar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

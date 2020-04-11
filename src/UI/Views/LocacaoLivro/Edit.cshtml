@@ -1,0 +1,61 @@
+﻿@model UI.Models.LocacaoLivroViewModel
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Editar livro</h1>
+
+<h4>Livro</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="LocacaoId" />
+
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DataLocacao" class="control-label"></label>
+                <input asp-for="DataLocacao" class="form-control" type="date" />
+                <span asp-validation-for="DataLocacao" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DataEntrega" class="control-label"></label>
+                <input asp-for="DataEntrega" class="form-control" type="date" />
+                <span asp-validation-for="DataEntrega" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DataDevolucao" class="control-label"></label>
+                <input asp-for="DataDevolucao" class="form-control" type="date" />
+                <span asp-validation-for="DataDevolucao" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="UsuarioId" class="control-label"></label>
+                <select class="form-control" asp-for="UsuarioId" asp-items="@ViewBag.Usuarios" ></select>
+                <span asp-validation-for="UsuarioId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LivroId" class="control-label"></label>
+                <select class="form-control" asp-for="LivroId" asp-items="@ViewBag.Livros" ></select>
+                <span asp-validation-for="LivroId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

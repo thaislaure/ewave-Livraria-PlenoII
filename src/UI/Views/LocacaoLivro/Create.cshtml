@@ -1,0 +1,49 @@
+﻿@model UI.Models.LocacaoLivroViewModel
+
+@{
+    ViewData["Title"] = "Nova locação de livro";
+}
+
+<h1>Nova locação</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DataLocacao" class="control-label"></label>
+                <input asp-for="DataLocacao" class="form-control" type="date" />
+                <span asp-validation-for="DataLocacao" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DataEntrega" class="control-label"></label>
+                <input asp-for="DataEntrega" class="form-control" type="date" />
+                <span asp-validation-for="DataEntrega" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="UsuarioId" class="control-label"></label>
+                <select class="form-control" asp-for="UsuarioId" asp-items="@ViewBag.Usuarios"></select>
+                <span asp-validation-for="UsuarioId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LivroId" class="control-label"></label>
+                <select class="form-control" asp-for="LivroId" asp-items="@ViewBag.Livros"></select>
+                <span asp-validation-for="LivroId" class="text-danger"></span>
+            </div>            
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

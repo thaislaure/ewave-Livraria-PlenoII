@@ -1,0 +1,53 @@
+﻿@model IEnumerable<BLL.DTO.LocacaoLivroDTO>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Consulta de Locações de livros</h1>
+
+<p>
+    <a asp-action="Create">Nova Locação</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DataLocacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataEntrega)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeLivro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeUsuario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataLocacao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataEntrega)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NomeLivro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NomeUsuario)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.LocacaoId">Editar</a> |
+                    <a asp-action="Delete" asp-route-id="@item.LocacaoId">Deletar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

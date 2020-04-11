@@ -1,0 +1,12 @@
+C:\Users\thais\source\repos\Livraria\src\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
+C:\Users\thais\source\repos\Livraria\src\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+C:\Users\thais\source\repos\Livraria\src\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
+C:\Users\thais\source\repos\Livraria\src\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
+C:\Users\thais\source\repos\Livraria\src\DAL\bin\Debug\netcoreapp3.1\DAL.dll
+C:\Users\thais\source\repos\Livraria\src\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\thais\source\repos\Livraria\src\DAL\bin\Debug\netcoreapp3.1\BLL.dll
+C:\Users\thais\source\repos\Livraria\src\DAL\bin\Debug\netcoreapp3.1\BLL.pdb
+C:\Users\thais\source\repos\Livraria\src\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CopyComplete
+C:\Users\thais\source\repos\Livraria\src\DAL\obj\Debug\netcoreapp3.1\DAL.dll
+C:\Users\thais\source\repos\Livraria\src\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\thais\source\repos\Livraria\src\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
